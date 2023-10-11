@@ -1,0 +1,539 @@
+@charset "utf-8";
+@import url('fonts.css');
+@import url('all.min.css');
+
+html {font-size: 16px;}
+body{ font: 16px 'Noto Sans KR', sans-serif; color:#555;
+    overflow-x: hidden;}
+
+/* 메인배너 슬라이드 */
+.swiper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 슬라이드 안 텍스트 */
+.swiper-wrapper .swiper-slide{position: relative;}
+.swiper-wrapper .swiper-slide .text  {
+    position: absolute;
+    top: 70%; left: 10%;
+    }
+
+.swiper-wrapper .swiper-slide .text {
+    text-align: left;
+    color: #fff; text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2); }
+
+.swiper-wrapper .swiper-slide .text h1 {font-size: 38px; font-weight: 600;}
+.swiper-wrapper .swiper-slide .text p {font-size: 20px; margin-bottom: 10px;}
+
+
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-button-next {background-image: url(../img/다음.png); background-color:rgba(0, 0, 0, 0.5)}
+.swiper-button-prev {background-image: url(../img/back.png);  background-color:rgba(0, 0, 0, 0.5)}
+
+.swiper-button-next01 {background-image: url(../img/다음.png); background-color:rgba(0, 0, 0, 0.5)}
+.swiper-button-prev01 {background-image: url(../img/back.png);  background-color:rgba(0, 0, 0, 0.5)}
+
+/* 공통요소 */
+.inner {margin: 0 auto; max-width: 1400px;}
+.inner h2 {
+    font-weight: 500; 
+    font-size: 28px; 
+    padding-bottom: 30px; 
+    color: #111;
+}
+.borter {border: 1px solid #111; padding: 8px 20px;}
+.bold {color: #000; font-weight: 500; font-size: 20px;}
+.small {color: rgba(0, 0, 0, 0.5); font-weight: 400; font-size: 14px;}
+.won {
+    display: block;
+    font-weight: 300; 
+    font-size: 16px; 
+    color: #111;
+}
+
+
+/* header */
+header {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    padding: 20px;
+    font-size: 15px;
+    color: #fff;
+    z-index: 100;
+    
+
+}
+header:hover {
+    background: #fff; 
+    color: #111; 
+    transition: all 1.0s;
+
+}
+
+/* top_header */
+.top_header{ filter: brightness(90);}
+.top_header h1 {position: relative; display:block ; text-align: center;}
+.top_header h1 a {width: 100%; height: 100%;}
+.top_header:hover {filter: none;}
+
+.top_header .left {
+    float: left;
+    position: absolute;
+    left: 23%; top: 10%;
+}
+.top_header .left .menu {
+    display: none; 
+}
+.top_header .right {
+    float: right;
+    position: absolute;
+    right: 23%; top: 10%;
+}
+.top_header .right > span img{filter: brightness(90);}
+
+
+.top_header .right > span {margin-right: 20px;}
+.top_header .right > span::before {
+    content: '';
+    position: absolute;
+    top: 15%; left: 35%;
+    width: 1px;
+    height: 15px;
+    background: #ccc;
+}
+
+/* 메뉴영역 nav */
+.nav {}
+.nav > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.nav > ul > li {position: relative;}
+.nav > ul > li > a {display:  inline-block;padding: 10px 30px;}
+.nav > ul > li > a:hover{border-bottom: 3px solid #111;}
+
+.nav > ul > li > ul {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 500px;
+    display: none;
+    
+
+}
+.nav > ul > li > ul > li {float: left;display: flex;}
+.nav > ul > li > ul > li > a{
+    display: inline-block;
+    padding: 0 15px;
+    color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    box-sizing: border-box;
+}
+.nav > ul > li > ul > li > a:hover {font-weight: 700; color: #000;}
+.bg_gnb{
+    position: absolute; 
+    left: 0; right: 0; top: 107px;
+    height: 50px;
+    background:#fff;
+    display: none;
+}
+
+
+
+
+
+
+/* 설화수 추천 */
+.swiper {
+width: 100%;
+height: 100%;
+}
+
+.swiper.too h2{margin-top: 100px;}
+
+.swiper-slide {
+text-align: center;
+font-size: 18px;
+background: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-pagination {display: block; margin-top: 30px;}
+
+
+
+/* 베스트셀러 */
+.center .best01 .best {margin-top: 100px;}
+.center .best01 .best > a > .mo {display: none;}
+.center .best01 .best > a > .pc {width: 100%; display: block;}
+.center .best01 .best {position: relative;}
+
+
+.center .best01 .best .text {position: absolute; left: 15%; bottom: 15%;}
+.center .best01 .best .text p {
+    font-size: 20px;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.center .best01 .best .text h2{font-weight: 500; color: black; font-size: 32px; }
+.center .best01 .best .text .borter {border: 1px solid #111; padding: 8px 20px;}
+
+
+
+/* 설화수 시즌추천 */
+.season .season_list > ul {
+    display: flex;
+    text-align: center; 
+    justify-content: left;
+    align-content: center;
+    max-width: 100%;
+    
+    
+}
+.season .season_list > ul li {
+    margin-right: 15px;
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+.season .season_list > ul li img {
+    width: 100%; 
+    object-fit: cover;
+    background: #eee;
+    
+}
+.season .season_list > ul li .onee, .tooo {padding-bottom: 138px;}
+
+.season {margin-top: 150px;}
+.season .season_list > ul .one {width: 23.33%; height: 100%; position: relative;}
+.season .season_list > ul .too {width: 50%;  height: 100%;position: relative;}
+.season .season_list > ul .three {width: 23.33%; height: 100%; position: relative;}
+.season .season_list .text {position: absolute; top: 75%;left: 10%;}
+.season .season_list .too .text {text-align: left;}
+
+
+/* 스토어 */
+.store .store_list {width: 100%; box-sizing: border-box; margin-top: 100px;}
+.store .store_list li {
+    position: relative;
+    float: left; 
+    width: calc(100%/2 - 20px);
+    margin-left: 20px;
+    text-align: center; 
+    margin-bottom: 120px;
+    height: 100%;
+}
+.store .store_list li img {max-width: 100%;}
+/* .store .store_list li .hover_text {
+    position: absolute;
+    top: 0; left: 0;
+    width: 680px;
+    height: 577px;
+    background: #000;
+    opacity: 0;
+}
+.store .store_list li .hover_text > p {
+    color: #fff;
+    font-size: 24px;
+    font-family:'Gowun Dodum';
+    text-align: center;
+    margin-top: 35%;
+    
+    
+} */
+.store .store_list li:hover .hover_text {opacity: 0.7; transition: all 0.5s;}
+.store .store_list li h2 {margin-top: 20px;}
+
+
+/* with Sulwasoo */
+.review .review_list li {
+    position: relative;
+    float: left; 
+    width: calc(100%/6 - 15px); 
+    margin-right: 15px;
+    height: auto;
+    box-sizing: border-box;
+}
+.review .review_list li img{
+    width: 100%;
+    transition: all 0.2s linear;
+}
+.review .review_list .iicon {
+    position: absolute; 
+    top: 15px; left: 10px;
+    width: 40px; height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    
+}
+.review .review_list .iicon img{
+    display: inline-block;
+    margin-top: 7px;
+    margin-left: 7px; 
+    width: 25px; height: 25px;
+    
+    
+}
+.review .review_list .mouseover{
+    display: none; 
+    height: 50px;
+    padding: 20px;
+    position: absolute; 
+    bottom: 0; left: 0;
+    z-index: 10px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    background: #fff;
+    text-align: center;
+    overflow: hidden;
+    
+}
+.review .review_list .mouseover > p > span {font-size: 12px; color: #000; font-weight: 500;}
+.review .review_list .mouseover > p {font-size: 12px; color: rgba(0, 0, 0, 0.5); margin-top: 5px;}
+
+.review .review_list li img:hover {transform: scale(0.9);}
+.review .review_list li:hover .mouseover {
+    display: block; 
+    overflow: hidden;}
+
+
+
+
+.review .review_list img:hover {
+    cursor:url(../img/newsulwhasoo_hd_black_search_220902.png)20 30, auto;
+    
+
+}
+
+
+/* footer */
+footer {position: relative; padding: 20px; height: 100px; width: 100%; margin-top: 50px;}
+
+.footer_top{border: 1px solid rgba(0, 0, 0, 0.1);height: 50px;}
+.footer_top {border-left: none; border-right: none;}
+.footer_top .title {margin-bottom: 30px; margin-top: 10px;}
+.footer_top .title ul li { float: left; margin-right: 30px;}
+.footer_top .title ul li a {
+    margin-left: 30px;
+    font-size: 15px;
+    font-weight:100; 
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 100;
+    line-height: 2;
+}
+.footer_top .title {display: flex;}
+.footer_top .title ul li a span {position: relative; }
+.footer_top .title ul li a span::after {
+    position: absolute;
+    right: -18px;
+    top: 3px;
+    content: '';
+    width: 1px;
+    height: 15px;
+    background: rgba(0, 0, 0, 0.146);
+}
+
+.footer_bottom {
+    color: rgba(0, 0, 0, 0.5); 
+    font-weight: 100; 
+    font-size: 15px; 
+    line-height: 1.8;
+    margin-top: 10px;
+    height: 100px;
+}
+.footer_bottom p {margin-left: 30px;}
+
+
+.icon {position: absolute; top: 20%; right: 0; display: flex;}
+.icon .icons span > img {width: 6%;}
+
+/* ------------------------------------------------------------- */
+
+/* pc버전 */
+@media screen and (max-width:1200px) {
+    #wrap{max-width: 1200px;}
+}
+
+/* 태블릿버전 */
+@media screen and (min-width:768px) and (max-width:1000px) {
+
+    /* 공통 */
+    .swiper.too,.center,.store .store_list,.season,.review {padding: 20px;}
+    .center .best01 .best .text h2 {font-size: 24px;}
+    .center .best01 .best .text p {font-size: 18px;}
+    .inner h2 {font-size: 20px;}
+    .bold {font-size: 18px;}
+    .small {font-size: 12px;}
+    .won {font-size: 14px;}
+    
+
+    /* 상단 */
+    header {height: 30px;}
+    .top_header h1 a {width:100%;}
+    .top_header h1 a > img{width: 10%; height: 20px;}
+    .top_header h1:hover {filter: none;}
+
+    .top_header .menu {display: block;}
+
+    .top_header .left > span {display: none;}
+    .top_header .left .menu {display:block; width: 20px; height: 20px;}
+
+    .top_header .right > span::before {display: none;}
+    .top_header .right > span > a {display: none;}
+
+    .nav {display: none; flex-direction: column; align-items: center; width: 100%;}
+
+    
+
+    /* 슬라이드 */
+    .swiper-wrapper .swiper-slide .text h1 {font-size: 26px; font-weight: 600; }
+    .swiper-wrapper .swiper-slide .text p {font-size: 18px; margin-bottom: 10px;}
+
+    /* 스토어 */
+    .store .store_list li .hover_text {display: none;}
+    .store .store_list li .hover_text > p {display: none;}
+        
+    /* 시즌추천 */
+    .season .season_list > ul .too img {height: 100%;}
+    .season .season_list > ul li .onee, .tooo {padding-bottom: 100px;}
+    .season .season_list .text {position: absolute; top: 60%;left: 3%;}
+
+    /* 리뷰 */
+    .review .review_list li{width: calc(100%/3 - 15px); }
+    .review .review_list li img:hover {transform: none;}
+    .review .review_list .iicon {width: 30px; height: 30px;}
+    .review .review_list .iicon img{margin-top: 5px;margin-left: 5px; width: 20px; height: 20px;}
+
+    .footer_top > .title, .footer_bottom > .text {display: none;}
+    .footer_bottom {height: 50px;}
+    .footer_bottom > p {font-size: 12px;}
+    .icon .icons > a > span {display: none;}
+    .icon .icons > a  {margin: 0 15px;}
+    .icon {left: 30%;}
+    
+
+}
+
+@media screen and (max-width:768px) {
+    #wrap{max-width: 768px;}
+    .inner {padding: 0 20px;}
+    
+    /* .swiper.too,.center,.store .store_list,.season,.review {padding: 20px;} */
+    .center .best01 .best .text h2 {font-size: 24px;}
+    .center .best01 .best .text p {font-size: 18px;}
+    .inner h2 {font-size: 20px;}
+    .bold {font-size: 18px;}
+    .small {font-size: 12px;}
+    .won {font-size: 14px;}
+    
+
+    /* 상단 */
+    header {height: 30px;}
+    .top_header h1 a {width:100%;}
+    .top_header h1 a > img{width: 10%; height: 20px;}
+    .top_header h1:hover {filter: none;}
+
+    .top_header .menu {display: block; }
+
+    .top_header .left > span {display: none;}
+    .top_header .left .menu {display:block; width: 20px; height: 20px;left: 0;}
+
+    .top_header .right > span::before {display: none;}
+    .top_header .right > span > a {display: none;}
+
+    .nav {display: none; flex-direction: column; align-items: center; width: 100%;}
+
+    
+
+    /* 슬라이드 */
+    .swiper.main > .swiper-wrapper .swiper-slide > a > img {height: 800px;}
+    .swiper.main > .swiper-wrapper .swiper-slide .text {
+        top: 20%; 
+        left: 10%;
+        text-align: center;
+    }
+    .swiper.main > .swiper-wrapper .swiper-slide .text p {font-size: 16px;}
+    .swiper.main > .swiper-wrapper .swiper-slide .text h1 {font-size: 24px;}
+
+    .swiper.too > .swiper-wrapper .swiper-slide > a > img {width: 100%;}
+    .swiper.too > .swiper-wrapper .swiper-slide .text h1 {font-size: 26px; font-weight: 600; }
+    .swiper.too > .swiper-wrapper .swiper-slide .text p {font-size: 18px; margin-bottom: 10px;}
+
+    /* 스토어 */
+    .store .store_list li .hover_text {display: none;}
+    .store .store_list li .hover_text > p {display: none;}
+    .store .store_list li {width: 100%; margin-left: 0;}
+        
+    /* 시즌추천 */
+    .season .season_list > ul{flex-direction: column; max-width: 768px;}
+    .season .season_list > ul li {margin-right: 0; display: flex; flex-wrap: wrap;}
+    .season .season_list > ul li:nth-of-type(1) {order: 2; width: 45%; }
+    .season .season_list > ul li:nth-of-type(2) {order: 1; width: 100%;}
+    .season .season_list > ul li:nth-of-type(3) {order: 2; width: 45%;}
+
+
+
+    /* 베스트 */
+    
+    .center .best > a > img {display: none;}
+    .center .best01 .best > a > .mo {display: block;}
+    .center .best01 .best > a > .pc {display: none;}
+
+    /* 리뷰 */
+    .review .review_list h2 {text-align: center;}
+    .review .review_list li{width: calc(100%/2 - 15px); }
+    .review .review_list li img:hover {transform: none;}
+    .review .review_list .iicon {width: 30px; height: 30px;}
+    .review .review_list .iicon img{margin-top: 5px;margin-left: 5px; width: 20px; height: 20px;}
+    .review .review_list .mouseover{display: block; width: 87%;}
+
+    /* 푸터 */
+    .footer_top > .title, .footer_bottom > .text {display: none;}
+    .footer_bottom {height: 50px;}
+    .footer_bottom > p {font-size: 12px;}
+    .icon .icons > a > span {display: none;}
+    .icon .icons > a  {margin: 0 15px;}
+    .icon {left: 30%;}
+
+
+}
